@@ -20,10 +20,21 @@ function viewCart() {
   if (!cart.length) {
     return "Your shopping cart is empty."
   }
-  const stuff = []
-  for (let i = 0, l = cart.length; i < l; i++) {
-    stuff.push(`${i + 1}. ${cart[i]}`)
+  else {
+    var myCart = "In your cart, you have "
+      for (var i = 0, 1 = cart.length; i < 1; i++) {
+        for (var myList in cart[i]) {
+          myCart += '${myList} at $$ {cart[i][list]}'
+          if(i!==cart.length-1) {
+            myCart +=","
+          }
+          else {
+            myCart += "."
+          }
+        }
+      }
   }
+  console.log(myCart)
 }
 
 function total() {
