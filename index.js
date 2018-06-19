@@ -16,6 +16,7 @@ function addToCart(itemName) {
   return cart
 };
 
+/*
 function viewCart() {
   if (!cart.length) {
     return "Your shopping cart is empty."
@@ -48,3 +49,4 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   var cardNumber = parseInt("123456789");
 }
+*/
