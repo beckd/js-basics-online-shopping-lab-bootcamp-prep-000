@@ -26,7 +26,7 @@ function viewCart() {
   }
   const stuff = []
   for (let i = 0, l = cart.length; i < l; i++) {
-    stuff.push(`${i + 1}. ${line[i]}`)
+    stuff.push(`${i + 1}. ${cart[i]}`)
   }
 }
 
