@@ -13,11 +13,11 @@ function getCart(){
   return cart;
 }
 
-function addToCart(item){
+function addToCart(itemName){
   var price = Math.random() * 100
   var roundedPrice = Math.floor(price)
-  cart.push({[item]: roundedPrice})
-  console.log(item + " has been added to your cart.")
+  cart.push({[itemName]: roundedPrice})
+  console.log(itemName + " has been added to your cart.")
   return cart;
 }
 addToCart('bananas')
