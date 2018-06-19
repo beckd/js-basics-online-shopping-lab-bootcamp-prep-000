@@ -1,4 +1,4 @@
-var cart = [itemName];
+var cart = [];
 
 const stuff = [
   {itemName: "bananas", itemPrice: Math.floor((Math.random() * 100) + 1)},
@@ -21,7 +21,13 @@ function addToCart(itemName) {
 };
 
 function viewCart() {
-  // write your code here
+  if (!cart.length) {
+    return "Your cart is currently empty."
+  }
+  const stuff = []
+  for (let i = 0, l = cart.length; i < l; i++) {
+    stuff.push(`${i + 1}. ${line[i]}`)
+  }
 }
 
 function total() {
@@ -33,5 +39,5 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  var cardNumber = parseInt("123456789");
 }
