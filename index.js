@@ -1,11 +1,5 @@
 var cart = [];
 
-const stuff = [
-  {itemName: "bananas", itemPrice: Math.floor((Math.random() * 100) + 1)},
-  {itemName: "pancake batter", itemPrice: Math.floor((Math.random() * 100) + 1)},
-  {itemName: "eggs", itemPrice: Math.floor((Math.random() * 100) + 1)},
-];
-
 function getCart() {
  return cart;
 }
@@ -16,8 +10,10 @@ function setCart(c) {
 }
 
 function addToCart(itemName) {
-  cart.push(itemName)
-  return `${itemName} has been added to your cart.`
+  var itemPrice = Math.floor((Math.random() * 100) + 1)
+    cart.push(new Object({[itemName: itemPrice]})
+  console.log(`${itemName} has been added to your cart.`);
+  return cart
 };
 
 function viewCart() {
